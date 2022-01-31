@@ -8,6 +8,6 @@ import java.util.Optional;
 
 @Repository
 public interface ApplicantRepository extends JpaRepository<Applicant, Integer> {
-    Optional<Applicant> findByNombre(String nombre);
-    boolean existsByNombre(String nombre);
+    Optional<Applicant> findByName(String name);
+    boolean existsByName(String name);
 }

@@ -1,17 +1,17 @@
 package com.umss.tramites.dto;
 
 public class Message {
-    private String mensaje;
+    private String message;
 
-    public Message(String mensaje) {
-        this.mensaje = mensaje;
+    public Message(String message) {
+        this.message = message;
     }
 
-    public String getMensaje() {
-        return mensaje;
+    public String getMessage() {
+        return message;
     }
 
-    public void setMensaje(String mensaje) {
-        this.mensaje = mensaje;
+    public void setMessage(String message) {
+        this.message = message;
     }
 }

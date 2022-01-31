@@ -14,33 +14,33 @@ import java.util.Optional;
 public class ApplicantService {
 
     @Autowired
-    ApplicantRepository productoRepository;
+    ApplicantRepository applicantRepository;
 
     public List<Applicant> list(){
-        return productoRepository.findAll();
+        return applicantRepository.findAll();
     }
 
     public Optional<Applicant> getOne(int id){
-        return productoRepository.findById(id);
+        return applicantRepository.findById(id);
     }
 
-    public Optional<Applicant> getByNombre(String nombre){
-        return productoRepository.findByNombre(nombre);
+    public Optional<Applicant> getByName(String name){
+        return applicantRepository.findByName(name);
     }
 
-    public void  save(Applicant producto){
-        productoRepository.save(producto);
+    public void  save(Applicant paperwork){
+        applicantRepository.save(paperwork);
     }
 
     public void delete(int id){
-        productoRepository.deleteById(id);
+        applicantRepository.deleteById(id);
     }
 
     public boolean existsById(int id){
-        return productoRepository.existsById(id);
+        return applicantRepository.existsById(id);
     }
 
-    public boolean existsByNombre(String nombre){
-        return productoRepository.existsByNombre(nombre);
+    public boolean existsByName(String name){
+        return applicantRepository.existsByName(name);
     }
 }

@@ -8,6 +8,7 @@ class PaperworkApplicationTests {
 
 	@Test
 	void contextLoads() {
+		// Do nothing
 	}
 
 }
